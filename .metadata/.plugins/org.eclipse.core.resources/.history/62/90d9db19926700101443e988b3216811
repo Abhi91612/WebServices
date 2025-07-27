@@ -1,5 +1,0 @@
-package com.abhi.repository;
-
-public interface DoctorRepository {
-
-}

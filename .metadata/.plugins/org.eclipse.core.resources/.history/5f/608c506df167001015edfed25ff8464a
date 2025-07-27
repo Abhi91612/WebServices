@@ -1,9 +1,0 @@
-package com.abhi.service;
-
-import com.abhi.model.Patient;
-
-public interface PatientService {
-
-	void savePatient(Patient patient);
-
-}

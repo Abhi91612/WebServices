@@ -1,7 +1,0 @@
-package com.abhi.serviceImpl;
-
-import com.abhi.service.DoctorService;
-
-public class DoctorServiceImpl  implements DoctorService{
-
-}

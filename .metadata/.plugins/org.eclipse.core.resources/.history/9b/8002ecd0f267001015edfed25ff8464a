@@ -1,5 +1,0 @@
-package com.abhi.exceptions;
-
-public class PatientNotFoundException {
-
-}

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;employee-department-service-dto-modelmapper&apos;" deleteContents="true" description="Delete resource &apos;employee-department-service-dto-modelmapper&apos;" element1="/employee-department-service-dto-modelmapper" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1753207067549"/>
-</session>

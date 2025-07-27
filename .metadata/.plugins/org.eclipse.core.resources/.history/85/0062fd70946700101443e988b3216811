@@ -1,6 +1,0 @@
-package com.abhi.service;
-
-
-public interface PatientService {
-
-}

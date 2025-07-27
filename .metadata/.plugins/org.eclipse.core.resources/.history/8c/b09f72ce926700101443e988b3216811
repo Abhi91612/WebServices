@@ -1,8 +1,0 @@
-package com.abhi.serviceImpl;
-
-import com.abhi.repository.DoctorRepository;
-import com.abhi.service.DoctorService;
-
-public class DoctorServiceImpl  implements DoctorService{
-
-}

@@ -1,7 +1,0 @@
-package com.abhi.service;
-
-import com.abhi.repository.PatientRepository;
-
-public interface PatientService {
-
-}
