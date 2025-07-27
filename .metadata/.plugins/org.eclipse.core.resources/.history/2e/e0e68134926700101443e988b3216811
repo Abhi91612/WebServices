@@ -1,0 +1,5 @@
+package com.abhi.repository;
+
+public interface PatientRepository {
+
+}

@@ -1,0 +1,10 @@
+package com.abhi.serviceImpl;
+
+import org.springframework.stereotype.Service;
+
+import com.abhi.service.DoctorService;
+
+@Service
+public class DoctorServiceImpl  implements DoctorService{
+
+}

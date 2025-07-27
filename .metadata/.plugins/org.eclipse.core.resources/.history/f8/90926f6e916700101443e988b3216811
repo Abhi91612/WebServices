@@ -1,0 +1,16 @@
+package com.abhi.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Patient {
+	@Id
+	private int patientid;
+	private String name;
+	private String city;
+	private String email;
+	private String phone;
+	private String symptom;
+
+}

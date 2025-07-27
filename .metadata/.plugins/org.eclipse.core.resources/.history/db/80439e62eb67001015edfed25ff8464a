@@ -1,0 +1,70 @@
+package com.abhi.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
+
+@Entity
+public class Doctor {
+	@Id
+	@GeneratedValue(generator = "doc_seq")
+	@SequenceGenerator(name = "doc_seq", initialValue = 101,allocationSize = 1)
+	private int docid;
+	@NotNull(message = "Name is required")
+	@Pattern(regexp = "^[a-zA-Z' '].{2}$", message = "Name Must Have atleast three letter")
+	private String name;
+	@NotNull(message = "City Is required")
+	@Pattern(regexp = "Delhi|Noida|Faridabad" , message = "Only Delhi ,Noida and Faridabad allowed")
+	private String city;
+	@NotNull(message = "Email Is required")
+	@Pattern (regexp = "^[a-zA-Z0-9._-]+@[a-zA-z0-9.-]+\\.[a-zA-Z]{2,4}$",message = "Emial is not Valid")
+	private String email;
+	@NotNull(message = "Phone Is required")
+	@Pattern(regexp = "^[0-9].{9}$",message = "Phone number is Invalid or atleast 10 digit")
+	private String phone;
+	@NotNull(message = "Speciality Is required")
+	@Pattern(regexp = "Orthopedic|Gynocology|Dermatology|ENT", message = "Speciality in not Valid")
+	private String speciality;
+	public int getDocid() {
+		return docid;
+	}
+	public void setDocid(int docid) {
+		this.docid = docid;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public String getSpeciality() {
+		return speciality;
+	}
+	public void setSpeciality(String speciality) {
+		this.speciality = speciality;
+	}
+	
+	
+
+}

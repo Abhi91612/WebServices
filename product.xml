@@ -1,0 +1,21 @@
+<?xml version='1.0' ?>
+<productinfo>
+  <product>
+    <pid>101</pid>
+    <name>Mouse</name>
+    <brand>Logitech</brand>
+    <price>1200</price>
+  </product>
+  <product>
+    <pid>102</pid>
+    <name>Mouse</name>
+    <brand>Logitech</brand>
+    <price>1200</price>
+  </product>
+  <product>
+    <pid>103</pid>
+    <name>Mouse</name>
+    <brand>Logitech</brand>
+    <price>1200</price>
+  </product>
+</productinfo>

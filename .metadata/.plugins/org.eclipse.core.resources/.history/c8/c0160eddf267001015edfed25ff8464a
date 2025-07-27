@@ -1,0 +1,37 @@
+package com.abhi.serviceImpl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.abhi.model.Doctor;
+import com.abhi.model.Patient;
+import com.abhi.repository.PatientRepository;
+import com.abhi.service.PatientService;
+
+@Service
+public class PatientServiceImpl implements PatientService {
+
+	@Autowired PatientRepository patientRepository;
+	
+	@Override
+	public void savePatient(Patient patient) {
+		patientRepository.save(patient);
+	}
+
+	@Override
+	public List<Doctor> findDoctorListofPatientSymptom(int pid) {
+	
+		Patient patient=patientRepository.findById(pid).orElse(null);
+		if (patient==null) {
+			throw new PatientNotFoundException("Patient with id "+pid+" not found.");
+		}
+		String city=patient.getCity();
+		if(!(city.equals("Delhi") || city.equals("Noida") || city.equals("Faridabad")) ) {
+			throw new RuntimeException("We are working to expand Our service !");
+		}
+		return null;
+	}
+
+}

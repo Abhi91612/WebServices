@@ -1,0 +1,21 @@
+package com.abhi.utility;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Symptom {
+	public static void main(String[] args) {
+		
+	
+	Map<String,String> map= new HashMap<>();
+	map.put("Arthritis", "Orthopedic");
+	map.put("Backpain", "Orthopedic");
+	map.put("Tissue", "Orthopedic");
+	map.put("Dysmenorrhea", "Gynecology");
+	map.put("Skin infection", "Dermatology");
+	map.put("Skin burn", "Dermatology");
+	map.put("Ear pain", "ENT");
+	}
+	
+
+}

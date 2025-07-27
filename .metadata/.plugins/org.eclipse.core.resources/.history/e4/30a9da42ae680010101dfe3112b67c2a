@@ -1,0 +1,14 @@
+package com.abhi.service;
+
+import java.util.List;
+
+import com.abhi.model.Doctor;
+import com.abhi.model.Patient;
+
+public interface PatientService {
+
+	void savePatient(Patient patient);
+
+	List<Doctor> findDoctorListofPatientSymptom(int pid);
+
+}
